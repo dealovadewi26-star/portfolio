@@ -1,0 +1,109 @@
+/* 🌈 Animated pastel background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff90bb, #ffc1da, #f8f8e1, #8accd5);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🪞 Card layout */
+.portfolio {
+  display: flex;
+  width: 850px;
+  height: 550px;
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* 🌸 Left Section (Photo + Hello) */
+.left {
+  width: 40%;
+  background-color: #ff66a3;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.photo-frame {
+  background: #fff;
+  border: 5px solid #ffc1da;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 8px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hello {
+  font-size: 36px;
+  margin: 15px 0 5px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.icons {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+/* 💬 Right Section (About text) */
+.right {
+  width: 60%;
+  padding: 30px;
+  color: #333;
+}
+
+.right h1 {
+  color: #ff66a3;
+  margin-bottom: 15px;
+}
+
+.right p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+blockquote {
+  background: #f8f8e1;
+  padding: 15px;
+  border-radius: 10px;
+  font-style: italic;
+  color: #6b4f7a;
+}
+
+/* 🌷 Navigation bar (bottom pink) */
+.bottom-nav {
+  margin-top: 20px;
+  background-color: #f48fb1;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bottom-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.bottom-nav a.active {
+  text-decoration: underline;
+}
